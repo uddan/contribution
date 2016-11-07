@@ -1,0 +1,264 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+		/* Parallax Section */
+
+#h1{
+	padding-top: 150px;
+	padding-bottom: 150px;
+	text-align: center;
+	color: gray;
+}
+.parallax{
+	background: url("img/1.jpg") fixed;
+	background-size: cover;
+	height: 600px;
+	margin-bottom: -30px;
+	
+}
+
+
+
+  /* End of Parallax Section */ 
+  
+  /* Student Section */ 
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 10px ;
+	padding: 2em 0 0em;
+	max-width: 1319px;
+	list-style: none;
+	text-align: center;
+}
+body {
+	
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+.img-content{
+	width: 325px;
+	height: 300px;
+	background-color: #86abbd;
+	margin: 2px;
+	padding: 0;
+	float: left;
+	overflow:hidden;
+}
+/* Row style */
+#row{
+	margin-left: -63px;
+	padding-left: 74px;
+	margin-bottom: 25px;
+}
+#student-body{
+	background-color: #293352;
+}
+#teacher-img{
+	
+	margin-left: 80px;
+	
+}
+	/* First Row */
+	
+
+#row1-h1{
+	padding-top: 10px;
+	text-align: center;
+	font-size: 450%;
+	font-family: FredokaOne-Regular;
+	
+	border-left: 5px solid #414141;
+	border-bottom: 10px solid #414141;
+    background-color: #999999;
+	opacity: 0.7;
+}
+	
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0px 0%;
+	min-width: 325px;
+	max-width: 325px;
+	max-height: 240px;
+	width: 30%;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+	border-top: 5px solid #A51C30;
+	border-bottom: 3px solid #A51C30;
+}
+
+.social-icons{
+	float: center;
+	padding-top: 255px;
+	
+}
+@media screen and (min-width: 800px) {
+    .social-icons{
+        float: center;
+		padding-top: 255px;
+    }
+}
+.fa{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: ;
+	font-size: 2em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.1em;
+	font-weight: 200;
+}
+
+.grid figure h2 span {
+	font-weight: 200;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 75%;
+}
+
+	/* Individual effects */
+
+
+/*-----------------*/
+/***** Apollo *****/
+/*-----------------*/
+
+figure.effect-apollo {
+	background: black;
+}
+
+
+figure.effect-apollo figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(146, 133, 133, 0.5);
+	content: '';
+	-webkit-transition: -webkit-transform 0.8s;
+	transition: transform 0.6s;
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+figure.effect-apollo p {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 3em;
+	padding: 0 1em;
+	max-width: 150px;
+	border-right: 4px solid #fff;
+	text-align: right;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-apollo h2 {
+	opacity: 0;
+	text-align: left;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-apollo:hover img {
+	opacity: 0.5;
+	
+}
+
+figure.effect-apollo:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+figure.effect-apollo:hover p {
+	opacity: 1;
+	
+}
+
+figure.effect-apollo:hover h2 {
+	opacity: 1;
+	text-align: left;
+	
+}
+
+
+
+/* Media queries */
+
+
+/* New Student Section */
+#student {
+	background-image: url("img/1.jpg");  /* Problem -----------------*/
+	background-color: #002147;
+	width: 100%;
+	height: 450px;
+	color: #FFFFF3;
+	
+	
+}
+#image{
+	width: 100px;
+	height: 90px;
+	
+	
+}
+#text-form{
+	text-align: center;
+}
+#text{
+	text-align: center;
+}
+
+
+
+
+
+
+
